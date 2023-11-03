@@ -34,7 +34,9 @@ typedef struct
 registroArchivo cargarRegistro();
 void cargarArchivo(char archivo[]);
 void printMenu();
-
+void cargarArchivo(char archivo[]);
+void mostrarArchivo(char archivo[]);
+void mostrarRegistro(registroArchivo registro);
 
 int main()
 {
@@ -53,8 +55,7 @@ int main()
         break;
     case 2:
         mostrarArchivo(archivo);
-
-
+        break;
     default:
         break;
     }
